@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front Page Design</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .hero {
+            background-color: #333;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero-title {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .call-to-action {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+
+        .call-to-action:hover {
+            background-color: #0056b3;
+        }
+
+        .section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 0 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-title {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .feature-description {
+            line-height: 1.6;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.9em;
+        }
+
+        .navigation {
+            background-color: #444;
+            color: white;
+            padding: 15px 20px;
+            text-align: center; /* Center the navigation items */
+        }
+
+        .navigation a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+        }
+
+        .navigation a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <h1 class="hero-title">Welcome to Our Awesome Website</h1>
+        <p class="hero-subtitle">Discover amazing things and explore our world.</p>
+        <a href="#learn-more" class="call-to-action">Learn More</a>
+    </header>
+
+    <nav class="navigation">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section id="features" class="section">
+        <h2 class="section-title">Key Features</h2>
+        <div class="feature-grid">
+            <div class="feature">
+                <h3 class="feature-title">Intuitive Interface</h3>
+                <p class="feature-description">Our platform is designed with simplicity in mind, making it easy for everyone to navigate and use.</p>
+            </div>
+            <div class="feature">
+                <h3 class="feature-title">Powerful Tools</h3>
+                <p class="feature-description">Access a suite of powerful tools and functionalities to help you achieve your goals effectively.</p>
+            </div>
+            <div class="feature">
+                <h3 class="feature-title">Dedicated Support</h3>
+                <p class="feature-description">Our friendly and knowledgeable support team is always ready to assist you with any questions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="learn-more" class="section">
+        <h2 class="section-title">Learn More About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a href="#" class="call-to-action">Explore Now</a>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 My Awesome Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
