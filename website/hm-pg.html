@@ -4,23 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+      body{
+         background-image: url(pic1.jpg);
+         margin: 0;
+         padding: 0;
+         background-repeat: no-repeat;
+         background-size: cover;
+      }
+      .wrapper{
+         width: 1170px;
+         margin: auto;
+      }
+      header{
+        
+         height: 100vh;
+         -webkit-background-size: cover;
+         background-size: cover;
+         background-position: center center;
+         position: relative;
+      }
+      .nav-area{
+         float: right;
+         list-style: none;
+         margin-top: 30px;
+      }
+      .nav-area li{
+         display: inline-block;
+      }
+      .nav-area li a{
+         color: #aa1a1a;
+         text-decoration: none;
+         padding: 5px 20px;
+         font-family: poppins;
+         font-size: 14px;
+      }
+      .nav-area li a:hover{
+         background: #ebdede;
+         color: #8d1616;
+      }
+      
+      .welcome-text{
+         position: absolute;
+         width: 600px;
+         height: 300px;
+         margin: 20% 30%;
+         text-align: center;
+      }
+      .welcome-text h1{
+         text-align: center;
+         color: #831212;
+         text-transform: uppercase;
+         font-size: 60px;
+      }
+      .welcome-text a{
+         border: 1px solid #b31616;
+         padding: 10px 25px;
+         text-decoration: none;
+         text-transform: uppercase;
+         font-size: 14px;
+         margin-top: 20px;
+         display: inline-block;
+         color: #a70808;
+      }
+      .welcome-text a:hover{
+         background: #f3d6d6;
+         color: #5f0404;
+
+      }
+    </style>
 </head>
 <body>
-     <header>   
-  
-        </header>
-        <main>
-           <div class=”row">
-              <div class=”post-text-box”>
-  
-              </div>
-              <div class=”profile”>
-  
-              </div>  
-           </div>        
-        </main>
-        <footer>
-              
-        </footer>
+    <header>
+      <div class="wrapper">
+         <div class="log">
+            <img src="" alt="">
+         </div>
+         <ul class="nav-area">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+         </ul>
+      </div>
+      <div class="welcome-text">
+       <marquee behavior="" direction=""><h1>Welcome To The Page</h1></marquee>
+         <a href="#">Contuct Us</a>
+      </div>
+
+    </header>
 </body>
 </html>
