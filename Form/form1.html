@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: linear-gradient(135deg, #29ABE2, #00C6A7); /* Example gradient background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            width: 400px; /* Adjust as needed */
+        }
+
+        .form-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .form-title {
+            color: #29ABE2;
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+        .form-close-btn {
+            background: none;
+            border: none;
+            color: #ccc;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            color: #555;
+            margin-bottom: 5px;
+            font-size: 0.9em;
+        }
+
+        .form-input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid #ddd;
+            border-radius: 0;
+            font-size: 1em;
+            outline: none;
+        }
+
+        .form-input::placeholder {
+            color: #bbb;
+        }
+
+        .form-checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 0.8em;
+            color: #777;
+        }
+
+        .form-checkbox {
+            margin-right: 8px;
+        }
+
+        .form-submit-btn {
+            background-color: #29ABE2;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            width: 100%;
+        }
+
+        .form-submit-btn:hover {
+            background-color: #1e88c1;
+        }
+
+        .form-footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #777;
+        }
+
+        .form-footer a {
+            color: #29ABE2;
+            text-decoration: none;
+        }
+
+        .form-footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <h2 class="form-title">• Registration Form •</h2>
+            <button class="form-close-btn">✕</button>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="name" class="form-label">* Name</label>
+                <input type="text" id="name" class="form-input" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">* Email address</label>
+                <input type="email" id="email" class="form-input" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="country" class="form-label">Country</label>
+                <input type="text" id="country" class="form-input" placeholder="Your Country">
+            </div>
+            <div class="form-group">
+                <label for="phone" class="form-label">* Phone</label>
+                <input type="tel" id="phone" class="form-input" placeholder="Your Phone Number" required>
+            </div>
+            <div class="form-group">
+                <label for="password" class="form-label">* Password</label>
+                <input type="password" id="password" class="form-input" placeholder="Choose a Password" required>
+            </div>
+            <div class="form-checkbox-group">
+                <input type="checkbox" id="terms" class="form-checkbox">
+                <label for="terms">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</label>
+            </div>
+            <button type="submit" class="form-submit-btn">CREATE ACCOUNT</button>
+        </form>
+        <div class="form-footer">
+            Already have an account? <a href="#">Sing in</a>
+        </div>
+    </div>
+</body>
+</html>
